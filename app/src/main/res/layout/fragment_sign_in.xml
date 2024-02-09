@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".auth.SignInFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/ivLoginImage"
+                android:layout_width="@dimen/_320sdp"
+                android:layout_height="@dimen/_270sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_prod"/>
+            <ImageView
+                android:layout_width="100.00dp"
+                android:layout_height="100.00dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="23.00dp"
+                android:src="@drawable/store"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="India's Biggest Online General Store"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login Or SignUp"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginHorizontal="26.00dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:boxCornerRadiusBottomStart="16.90dp"
+                app:boxCornerRadiusTopStart="16.90dp"
+                app:boxCornerRadiusTopEnd="16.90dp"
+                app:endIconMode="clear_text">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etUserNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_local_phone_24"
+                    android:hint="Enter Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="10"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnContinue"
+                    android:layout_width="match_parent"
+                    android:layout_height="58.50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="26dp"
+                    android:layout_marginTop="6.5dp"
+                    android:backgroundTint="#8d99ae"
+                    android:text="Continue"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    app:cornerRadius="10dp"/>
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
